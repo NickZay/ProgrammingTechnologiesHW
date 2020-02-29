@@ -1,12 +1,12 @@
 #!/bin/bash
 recursion () {
 	path=$1
-	for obj in ls $path
+	for obj in `ls $path`
 	do
 		if [[ -d $obj ]]
 		then recursion $obj; fi;
 	done
-	for obj in find $path -name "*.$ext"
+	for obj in `find $path -name "*.$ext"`
 	do 
 		cp $obj ${bac}/`basename obj`$count".$ext"
 	       	((count+=1)) 
