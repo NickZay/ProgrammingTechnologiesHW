@@ -6,7 +6,7 @@ then mkdir $bac; fi;
 count=0
 for obj in `find $dir -name "*.$ext"`
 do
-	cp $obj ${bac}/$count`basename $obj`
+	cp $obj ${bac}/$count"_"`basename $obj`
        	((count+=1)) 
 done
 tar -zcf $arc $bac
