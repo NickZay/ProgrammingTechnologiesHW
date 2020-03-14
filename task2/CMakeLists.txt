@@ -18,3 +18,10 @@ add_dependencies(C XXX)
 
 add_subdirectory(B)
 target_link_libraries(C Blib)
+
+enable_testing()
+find_package(GTest REQUIRED)
+
+add_executable(CTest C/main_test.cpp C/tests.cpp)
+add_dependencies(CTest C)
+target_link_libraries(CTest GTest::GTest GTest::Main)
