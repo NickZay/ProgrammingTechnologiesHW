@@ -31,7 +31,7 @@ jobs:
               mkdir build
               cd build
               export GOOGLE_TEST_DIR=googletest
-              cmake -DCMAKE_INSTALL_PREFIX=/home/runner/work/TP/TP ..
+              cmake -DCMAKE_INSTALL_PREFIX=/home/runner/work/TP/TP/task4 ..
               make
               make install
 
@@ -46,4 +46,4 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
               name: Distributive
-              path: /home/runner/work/TP/TP/exe
+              path: /home/runner/work/TP/TP/task4/exe
