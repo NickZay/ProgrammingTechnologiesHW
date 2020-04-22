@@ -42,8 +42,8 @@ jobs:
               report-path: "report.xml"
               working-directory: "task4"
 
-    - name: UploadArtifacts
-      uses: actions/upload-artifact@v1
-      with:
-              name: Distributive
-              path: /home/runner/work/TP/TP/exe
+              #    - name: UploadArtifacts
+      #      uses: actions/upload-artifact@v1
+      #      with:
+              #              name: Distributive
+              #              path: /home/runner/work/TP/TP/exe
